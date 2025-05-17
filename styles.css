@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Outfit";
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    background-color: #F9F4EF;
+    line-height: 1.6;
+    padding: 1.5rem;
+}
+
+/* ------------------- */
+/* Typography          */
+/* ------------------- */
+h1, h3 {
+    font-family: "Young Serif";
+    color: hsl(14, 45%, 36%);
+
+}
+
+h1{
+    font-size: 2rem;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #E4DEDE;
+    margin-top: 1rem;
+}
+
+.prep-bold {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(332, 51%, 32%);
+    font-size: 18px;
+}
+
+/* ------------------- */
+/* Recipe Card         */
+/* ------------------- */
+
+.recipe-card{
+    background-color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.recipe-card__header{
+    margin-bottom: 2rem;
+}
+
+.recipe-card__image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.recipe-card__title {
+    margin-top: 1rem;
+}
+
+/* ------------------- */
+/* Preparation Time    */
+/* ------------------- */
+
+.prep-time__container {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
+
+.prep-time__list {
+    list-style-position: inside;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+/* ------------------- */
+/* Lists               */
+/* ------------------- */
+
+ul, ol {    
+    margin-bottom: 1rem;
+    list-style-position: outside;
+}
+
+ul li, ol li{
+    margin-bottom: 0.5rem;
+    position: relative;
+
+}
+
+ol li::marker , ul li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+
+}
+
+li span{
+    position: relative;
+    padding-left: 1em;
+
+}
+/* ------------------- */
+/* Table               */
+/* ------------------- */
+.recipe-card__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recipe-card__table tr {
+    border-bottom: 1px solid #E4DEDE;
+}
+
+.recipe-card__table tr:last-child {
+    border-bottom: none;
+}
+
+.recipe-card__table td {
+    padding: 1rem;
+    text-align: left;
+}
+
+.recipe-card__table td:last-child {
+    text-align: left;
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+/* ------------------- */
+/* Media Queries       */
+/* ------------------- */
+@media (max-width: 400px) {
+    body{background-color: white;}
+
+    .recipe-card {
+      padding: 1rem;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
